@@ -43,11 +43,9 @@ public class Usuario {
 	 */
 	private LocalDate fechaAlta;
 	/**
-	 * atributo que representa socio, 
-	 * atributo que representa admin,
-	 * atributo que representa conunsultor
+	 * atributo que representa tipo de usuario
 	 */
-	private String socio,admin,consultor;
+	private String tipo;
 	/**
 	 * atributo que representa un password
 	 */
@@ -70,13 +68,11 @@ public class Usuario {
 	 * @param direccion valor direccion
 	 * @param dni valor dni
 	 * @param fechaAlta valor fechaAlta
-	 * @param socio valor socio
-	 * @param admin valor admin
-	 * @param consultor valor consultor
+	 * @param tipo valor tipo
 	 * @param password valo password
 	 */
 	public Usuario(long id, String nombre, String apellido, LocalDate fechaNacimiento, String direccion, long dni,
-			LocalDate fechaAlta, String socio, String admin, String consultor, String password) {
+			LocalDate fechaAlta, String tipo , String password) {
 		this.id = id;
 		this.nombre = nombre;
 		this.apellido = apellido;
@@ -84,9 +80,7 @@ public class Usuario {
 		this.direccion = direccion;
 		this.dni = dni;
 		this.fechaAlta = fechaAlta;
-		this.socio = socio;
-		this.admin = admin;
-		this.consultor = consultor;
+		this.tipo=tipo;
 		this.password = password;
 	}
 
@@ -190,47 +184,20 @@ public class Usuario {
 		this.fechaAlta = fechaAlta;
 	}
 	/**
-	 * Devuelve el valor de socio
-	 * @return this.socio
+	 * Devuelve el valor de tipo
+	 * @return this.tipo
 	 */
-	public String getSocio() {
-		return socio;
+	public String getTipo() {
+		return tipo;
 	}
 	/**
-	 * Asigna un valor a socio
-	 * @param socio valor socio
+	 * Asigna un valor a tipo
+	 * @param tipo valor tipo
 	 */
-	public void setSocio(String socio) {
-		this.socio = socio;
+	public void setTipo(String tipo) {
+		this.tipo = tipo;
 	}
-	/**
-	 * Devuelve el valor de admin
-	 * @return this.admin
-	 */
-	public String getAdmin() {
-		return admin;
-	}
-	/**
-	 * Asigna un valor a admin
-	 * @param admin valor admin
-	 */
-	public void setAdmin(String admin) {
-		this.admin = admin;
-	}
-	/**
-	 * Devuelve el valor de consultor 
-	 * @return this.consultor
-	 */
-	public String getConsultor() {
-		return consultor;
-	}
-	/**
-	 * Asigna un valor a consultor
-	 * @param consultor valor consultor
-	 */
-	public void setConsultor(String consultor) {
-		this.consultor = consultor;
-	}
+
 	/**
 	 * Devuelve el valor de contraseña
 	 * @return this.password
@@ -249,7 +216,7 @@ public class Usuario {
 	public String toString() {
 		return "Usuario [id=" + id + ", nombre=" + nombre + ", apellido=" + apellido + ", fechaNacimiento="
 				+ fechaNacimiento + ", direccion=" + direccion + ", dni=" + dni + ", fechaAlta=" + fechaAlta
-				+ ", socio=" + socio + ", admin=" + admin + ", consultor=" + consultor + ", password=" + password + "]";
+				+ ", tipo=" + tipo + ", password=" + password + "]";
 	}
 	
 }

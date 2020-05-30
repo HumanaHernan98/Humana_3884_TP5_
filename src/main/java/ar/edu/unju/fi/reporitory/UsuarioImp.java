@@ -11,7 +11,7 @@ import ar.edu.unju.fi.Humana3884Tp5Application;
 import ar.edu.unju.fi.model.Usuario;
 
 @Repository("usuarioImp")
-public class Usuariolmp implements IUsuario {
+public class UsuarioImp implements IUsuario {
 	@Autowired
 	private Usuario usuario;
 	

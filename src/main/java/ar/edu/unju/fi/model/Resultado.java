@@ -2,11 +2,16 @@ package ar.edu.unju.fi.model;
 
 import java.time.LocalDate;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
 /**
  * Clase que representa el resultado de un partido
  * @author hernan humana
  *
  */
+//definimos Resultado como un bean
+@Component
 public class Resultado {
 	//---ATRIBUTOS---
 	/**
@@ -16,10 +21,14 @@ public class Resultado {
 	/**
 	 * atributo que representa el nombre del primer equipo
 	 */
+	//aplicamos inyeccion de dependencias
+	@Autowired
 	private Equipo equipo1;
 	/**
 	 * atributo que representa el nombre del segundo equipo
 	 */
+	//aplicamos inyeccion de dependencias
+	@Autowired
 	private Equipo equipo2;
 	/**
 	 * atributo que representa los goles del primer equipo

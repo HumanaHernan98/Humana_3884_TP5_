@@ -2,12 +2,16 @@ package ar.edu.unju.fi.model;
 
 import java.time.LocalDate;
 
+import org.springframework.stereotype.Component;
+
 /**
  * Clase que representa un estadio
  * 
  * @author Hernan Humana
  *
  */
+//definimos Estadio como un bean
+@Component 
 public class Estadio {
 	/**
 	 * atributo que representa el nombre del estadio

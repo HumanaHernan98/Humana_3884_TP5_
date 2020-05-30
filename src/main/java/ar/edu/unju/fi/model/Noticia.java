@@ -2,12 +2,16 @@ package ar.edu.unju.fi.model;
 
 import java.time.LocalDate;
 
+import org.springframework.stereotype.Component;
+
 /**
  * clase que representa una noticia
  * 
  * @author hernan
  *
  */
+//definimos Noticia como un bean
+@Component
 public class Noticia {
 	
 	//---ATRIBUTOS---

@@ -2,11 +2,16 @@ package ar.edu.unju.fi.model;
 
 import java.time.LocalDate;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
 /**
  * clase que representa una cuota de un servicio
  * @author hernan humana
  *
  */
+//definimos Cuota como un bean
+@Component
 public class Cuota {
 	//---ATRIBUTOS---
 	/**
@@ -32,6 +37,8 @@ public class Cuota {
 	/**
 	 * atributo que representa el usuario de una cuenta
 	 */
+	//aplicamos inyeccion de dependencias
+	@Autowired
 	private Usuario usuario;
 	//---CONSTRUCTORES---
 	/**

@@ -1,11 +1,16 @@
 package ar.edu.unju.fi.model;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
 /**
  * Clase que representa un equipo.
  * 
  * @author Hernan Humana
  *
  */
+//definimos Equipo como un bean
+@Component
 public class Equipo {
 	/*
 	 *atributo que representa el nombre de un equipo 
@@ -36,6 +41,16 @@ public class Equipo {
 		this.estadio = estadio;
 	}
 	
+	
+	/**
+	 * @param estadio
+	 */
+	//aplicamos inyeccion de dependencias
+	@Autowired
+	public Equipo(Estadio estadio) {
+		this.estadio = estadio;
+	}
+
 	//---METODOS ACCESORES---
 	
 	/**

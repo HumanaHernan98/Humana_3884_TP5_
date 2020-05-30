@@ -2,11 +2,15 @@ package ar.edu.unju.fi.model;
 
 import java.time.LocalDate;
 
+import org.springframework.stereotype.Component;
+
 /**
  * clase que represneta un usuario
  * @author hernan humana
  *
  */
+//definimos Usuario como un bean
+@Component
 public class Usuario {
 
 	//atributos

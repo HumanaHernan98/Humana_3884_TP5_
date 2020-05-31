@@ -1,0 +1,153 @@
+/*etilos usados en index*/
+*{
+	margin: 0px;
+	padding: opx;
+}
+
+body{
+	background: gray;
+}
+
+#contenedor{
+	height: 99%;
+}
+#cabecera{
+	height: 230px;
+	margin: 5px;
+}
+
+header {
+	height: 200px;
+	background-image: url("../img/encabezado.jpg");
+	background-size: 25% 100%;
+}
+
+header h1 {
+	font-size: 60px;
+	text-align: center;
+	padding: 50px;
+	color: white;
+	text-shadow: 4px 0 0 black;
+}
+
+nav {
+	height: 30px;
+	background: #93b704; 
+}
+
+nav ul li {
+	display: inline-block;
+	border: 1px solid black;
+	background: green;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: black;
+}
+
+nav ul li a:hover {
+	background: black;
+	color: white;
+}
+
+#contenido {
+	height: 400px;
+	width: 70%;
+	margin: 5px;
+	float: left;
+	background: #cceadc;
+	display: block;
+	overflow: auto;
+}
+
+#cuadro1, #cuadro2, #cuadro3{
+	width: 250px;
+	height: 300px;
+	margin-left: 30px;
+	margin-top: 20px;
+	display: inline-block;
+	border: 2px solid #841e1c;
+	background: #ffffff;
+	overflow: auto;	
+}
+
+section div img {
+	display: block;
+	margin: 25px;
+}
+
+section div p {
+	clear: both;
+	text-align: center;
+	margin: 3px;
+}
+
+section h2, aside h2 {
+	text-align: center;
+	background: #841e1c;
+	color: white;
+}
+
+#auspiciantes {
+	height: 400px;
+	width: 25%;
+	margin: 5px;
+	float: right;
+	background: #cceadc;
+}
+
+aside img{
+	display: block;
+	margin: auto;
+	margin-top: 20px;
+}
+
+footer{
+	background: #13152b;
+	height: 40px;
+	clear: both;
+	color: white;
+}
+#izquierda{
+	width: 60%;
+	float: left;
+	text-align: right;
+}
+#derecha{
+	width: 40%;
+	float: right;
+}
+footer img {
+	padding-right: 5px;
+}
+
+/*estilos usados en fixture.html*/
+
+section table {
+	display: block;
+	margin-top: 100px;
+	margin-left: 250px;
+	margin-right: 250px;
+	background: white;
+	border: 2px solid #841e1c;
+}
+
+/*estilo usado en equipos.html*/
+
+#imgs {
+	width: 40%;
+	display: block;
+	float: left;
+}
+#texto{
+	width: 50%;
+	float: left;
+}
+
+#parrafo{
+	text-align: center;
+	padding-top: 5px;
+	padding-left: auto;
+	background-color: aqua;
+}

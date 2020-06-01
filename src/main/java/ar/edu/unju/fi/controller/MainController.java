@@ -12,9 +12,15 @@ public class MainController {
 	@Autowired
 	private IUsuarioService usuarioService;
 	
-	@RequestMapping("/")
+	@RequestMapping("/index")
 	public String main(Model model) {
-		model.addAttribute("usuario", usuarioService.mostrar().getNombre());
+		model.addAttribute("usuario",usuarioService.mostrar().getNombre());
 		return "index";
 	}
+	
+	@RequestMapping("/fixture_y_resultados")
+	public String estadios(Model model) {
+		return "fixture";
+	}
+	
 }
